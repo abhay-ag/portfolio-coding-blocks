@@ -9,7 +9,7 @@
     <title>Portfolio</title>
 </head>
 <body class="bg-black text-white font-serif box-border">
-    <nav class="w-full flex bg-black sticky top-0 flex-row items-center h-20 justify-between">
+    <nav class="w-full flex bg-black sticky top-0 z-50 flex-row items-center h-20 justify-between">
         <h1 class="text-3xl flex flex-[0.6_0_0%] lg:flex-[0.4_0_0%] items-center justify-center font-bold">Coding Blocks</h1>
         <div class="flex-[0.3_0_0%]">
             <button class="rounded-2xl border-2 border-yellow-500 px-1 flex flex-row items-center justify-between">
@@ -48,14 +48,48 @@
             </div>
         </div>
     </main>
-    <section class = "container m-auto h-fit lg:h-screen flex flex-col lg:flex-row items-center justify-center">
-        <div class="flex-1 h-full flex flex-col justify-center font-bold items-start">
+    <section class = "container m-auto h-fit lg:h-screen flex flex-col lg:flex-row items-center justify-center mt-32">
+        <div class="flex-1 h-full flex flex-col justify-start font-bold items-start">
             <h1 class="text-6xl mb-4 flex flex-col justify-end">My Awesome</h1>
             <h3 class="text-6xl text-yellow-500 tracking-wide mb-8">services</h3>
             <p class="font-thin text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore facere, eaque vitae deserunt doloremque ratione repudiandae neque illum labore sapiente.</p>
             <button class="px-6 py-2 rounded-full bg-gradient-to-b from-yellow-400 to-yellow-600 shadow-2xl shadow-yellow-500 my-8">Download CV</button>
         </div>
-        <div class="flex-1 h-full"></div>
+        <div class="flex-1 h-full relative flex flex-row items-center">
+            <div class="flex flex-col items-center box-border absolute top-0 right-0">
+                <div class="w-72 h-96 rounded-xl bg-white flex flex-col justify-center items-center">
+                    <font class="text-7xl flex-1 flex items-center justify-center">
+                        😻
+                    </font>
+                    <font class="px-8 py-4 flex-1 text-black flex flex-col justify-end text-2xl text-center">
+                        Figma, Sketch, Photoshop, Adobe Illustrator, Adobe Xd
+                    </font>
+                </div>
+                <button class="text-blue-600 bg-gradient-to-b from-white to-blue-200 border border-blue-500 rounded-xl px-4 py-2 mt-5 hover:scale-110 shadow-2xl shadow-blue-200">Learn More</button>
+            </div>
+            <div class="flex flex-col items-center box-border absolute">
+                <div class="w-72 h-96 rounded-xl bg-white flex flex-col justify-center items-center">
+                    <font class="text-7xl flex-1 flex items-center justify-center">
+                        😎
+                    </font>
+                    <font class="px-8 py-4 flex-1 text-black flex flex-col justify-end text-2xl text-center">
+                        HTML5, CSS3, JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB
+                    </font>
+                </div>
+                <button class="text-blue-600 bg-gradient-to-b from-white to-blue-200 border border-blue-500 rounded-xl px-4 py-2 mt-5 hover:scale-110 shadow-2xl shadow-blue-200">Learn More</button>
+            </div>
+            <div class="flex flex-col items-center box-border absolute bottom-0 right-8">
+                <div class="w-72 h-96 rounded-xl bg-white flex flex-col justify-center items-center">
+                    <font class="text-7xl flex-1 flex items-center justify-center">
+                        😇
+                    </font>
+                    <font class="px-8 py-4 flex-1 text-black flex flex-col justify-end text-2xl text-center">
+                        Bootstrap, MaterialUI, Style Components, NextJS, EmailJS
+                    </font>
+                </div>
+                <button class="text-blue-600 bg-gradient-to-b from-white to-blue-200 border border-blue-500 rounded-xl px-4 py-2 mt-5 hover:scale-110 shadow-2xl shadow-blue-200">Learn More</button>
+            </div>
+        </div>
     </section>
 </body>
 </html>
