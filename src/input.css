@@ -13,6 +13,10 @@ body::-webkit-scrollbar{
 }
 
 body{
-    -ms-overflow-style: none;  /* IE and Edge */
+  -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;
+}
+.footer{
+    @apply w-full bg-yellow-500 relative flex flex-col items-center justify-center h-96;
+    border-radius: 100% 0% 0% 0% / 100% 0% 0% 0% ;
 }
