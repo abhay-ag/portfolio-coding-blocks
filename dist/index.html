@@ -10,8 +10,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body class="bg-black text-white font-serif box-border">
+  <body class="bg-black text-white font-serif box-border overflow-x-hidden">
     <nav
       class="w-full flex bg-black flex-row items-center h-20 justify-between"
     >
@@ -50,13 +51,15 @@
       </div>
     </nav>
     <main
-      class="container m-auto h-fit lg:h-screen flex flex-col lg:flex-row items-center justify-center"
+      class="container m-auto h-fit lg:h-screen flex flex-col lg:flex-row items-center justify-center mt-16 md:mt-0"
     >
       <div
-        class="flex-1 h-full flex flex-col justify-center font-bold items-start"
+        class="flex-1 h-full flex flex-col justify-center font-bold items-start px-4"
       >
-        <h1 class="text-8xl mb-4 flex-1 flex flex-col justify-end">Hy! I Am</h1>
-        <h3 class="text-8xl text-yellow-500 tracking-wide mb-8">
+        <h1 class="text-6xl md:text-8xl mb-4 flex-1 flex flex-col justify-end">
+          Hy! I Am
+        </h1>
+        <h3 class="text-6xl md:text-8xl text-yellow-500 tracking-wide mb-8">
           Coding Blocks
         </h3>
         <p class="font-thin text-gray-500">
@@ -88,13 +91,17 @@
       </div>
     </main>
     <section
-      class="container m-auto h-fit lg:h-screen flex flex-col lg:flex-row items-center justify-center mt-32"
+      class="container m-auto h-fit xl:h-screen flex flex-col xl:flex-row items-center justify-center mt-32"
     >
       <div
-        class="flex-1 h-full flex flex-col justify-start font-bold items-start"
+        class="flex-1 h-full flex flex-col justify-start font-bold items-start px-4"
       >
-        <h1 class="text-6xl mb-4 flex flex-col justify-end">My Awesome</h1>
-        <h3 class="text-6xl text-yellow-500 tracking-wide mb-8">services</h3>
+        <h1 class="text-4xl md:text-6xl mb-4 flex flex-col justify-end">
+          My Awesome
+        </h1>
+        <h3 class="text-4xl md:text-6xl text-yellow-500 tracking-wide mb-8">
+          services
+        </h3>
         <p class="font-thin text-gray-500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
           facere, eaque vitae deserunt doloremque ratione repudiandae neque
@@ -106,9 +113,11 @@
           Download CV
         </button>
       </div>
-      <div class="flex-1 h-full relative flex flex-row items-center">
+      <div
+        class="flex-1 h-full relative flex flex-col xl:flex-row space-y-7 items-center"
+      >
         <div
-          class="flex flex-col items-center box-border absolute top-0 right-0"
+          class="flex flex-col items-center box-border xl:absolute top-0 right-0"
         >
           <div
             class="w-72 h-96 rounded-xl bg-white flex flex-col justify-center items-center"
@@ -128,7 +137,7 @@
             Learn More
           </button>
         </div>
-        <div class="flex flex-col items-center box-border absolute">
+        <div class="flex flex-col items-center box-border xl:absolute">
           <div
             class="w-72 h-96 rounded-xl bg-white flex flex-col justify-center items-center"
           >
@@ -148,7 +157,7 @@
           </button>
         </div>
         <div
-          class="flex flex-col items-center box-border absolute bottom-0 right-8"
+          class="flex flex-col items-center box-border xl:absolute bottom-0 right-8"
         >
           <div
             class="w-72 h-96 rounded-xl bg-white flex flex-col justify-center items-center"
@@ -171,7 +180,7 @@
       </div>
     </section>
     <section
-      class="container m-auto h-fit md:h-[75vh] flex flex-col md:flex-row items-center justify-center"
+      class="container m-auto h-fit md:h-[75vh] my-32 xl:my-0 flex flex-col md:flex-row items-center justify-center"
     >
       <div class="w-48 h-64 flex flex-col justify-around items-center">
         <div
@@ -211,12 +220,12 @@
       class="container m-auto h-fit flex flex-col lg:flex-row items-center justify-center"
     >
       <div
-        class="flex-1 h-full flex flex-col justify-start font-bold items-start"
+        class="flex-1 h-full flex flex-col justify-start font-bold items-start px-4"
       >
-        <h1 class="text-6xl mb-4 flex flex-col justify-end">
+        <h1 class="text-4xl md:text-6xl mb-4 flex flex-col justify-end">
           I Want to work for
         </h1>
-        <h3 class="text-6xl text-yellow-500 tracking-wide mb-8">
+        <h3 class="text-4xl md:text-6xl text-yellow-500 tracking-wide mb-8">
           These Brands
         </h3>
         <p class="font-thin text-gray-500">
@@ -234,12 +243,12 @@
       </div>
       <div class="flex-1 h-full flex flex-row items-start justify-center">
         <div
-          class="w-[35rem] h-[35rem] bg-gray-200 rounded-full flex items-center justify-center"
+          class="w-80 md:w-[35rem] h-80 md:h-[35rem] bg-gray-200 rounded-full flex items-center justify-center"
         >
           <img
             src="https://advanced-television.com/wp-content/uploads/2020/01/faang.png"
             alt="FAANG"
-            class="w-full relative top-14"
+            class="w-full relative top-8 md:top-14"
           />
         </div>
       </div>
@@ -248,8 +257,12 @@
       class="container m-auto h-fit xl:h-screen flex flex-col items-center justify-around mt-24"
     >
       <div class="flex-1 flex flex-col items-center w-full">
-        <font class="text-6xl font-semibold">Recent Projects</font>
-        <font class="text-7xl font-bold text-yellow-500 mt-5">Portfolio</font>
+        <font class="text-5xl md:text-6xl font-semibold text-center"
+          >Recent Projects</font
+        >
+        <font class="text-6xl md:text-7xl font-bold text-yellow-500 mt-5"
+          >Portfolio</font
+        >
       </div>
       <div
         class="flex flex-wrap items-center flex-row w-full flex-1 justify-around"
@@ -319,7 +332,9 @@
     <section
       class="container m-auto flex flex-col h-fit md:h-[80vh] items-center justify-center"
     >
-      <div class="text-5xl flex-1 font-semibold self-start py-32">
+      <div
+        class="text-4xl md:text-5xl flex-1 font-semibold self-start py-32 px-4"
+      >
         Clients always get&nbsp;
         <font class="text-yellow-500">Exceptional Work</font>&nbsp;from me....
       </div>
@@ -334,10 +349,10 @@
               class="w-full"
             />
           </div>
-          <font class="text-yellow-500 text-center text-4xl mt-5"
+          <font class="text-yellow-500 text-center text-2xl md:text-4xl mt-5"
             >Lorem ipsum dolor sit amet consectetur.</font
           >
-          <font class="text-3xl mt-2">2015-2019</font>
+          <font class="text-xl md:text-3xl mt-2">2015-2019</font>
           <button
             class="bg-white rounded-full px-4 py-1 text-xl text-black my-4"
           >
@@ -347,16 +362,18 @@
       </div>
     </section>
     <section
-      class="container m-auto flex flex-col md:flex-row h-fit md:h-screen"
+      class="container m-auto flex flex-col md:flex-row h-fit md:h-screen mt-32 md:mt-0"
     >
-      <div class="h-full flex-1 flex flex-col justify-center">
+      <div class="h-full flex-1 flex flex-col justify-center px-4">
         <font class="text-white text-6xl font-semibold">Get in Touch</font>
         <font class="text-yellow-500 text-5xl font-semibold mt-5"
           >Contact Me</font
         >
       </div>
-      <div class="h-full flex-1 flex flex-col justify-center text-black">
-        <form class="flex flex-col space-y-8 items-start">
+      <div
+        class="h-full flex-1 flex flex-col justify-center text-black mt-8 md:mt-0"
+      >
+        <form class="flex flex-col space-y-8 items-start px-4">
           <input
             type="text"
             class="w-full md:w-3/4 rounded px-3 py-2 border-2 border-yellow-500 outline-none"
@@ -383,14 +400,16 @@
       </div>
     </section>
     <section class="footer">
-      <div class="text-2xl font-medium mb-5">
-        codingblocks@gmail.com
-      </div>
+      <div class="text-2xl font-medium mb-5">codingblocks@gmail.com</div>
       <div>
         <i class="fa-brands fa-github text-6xl mr-8"></i>
         <i class="fa-brands fa-linkedin-in text-6xl mr-8"></i>
         <i class="fa-brands fa-instagram text-6xl"></i>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
