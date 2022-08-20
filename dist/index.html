@@ -118,6 +118,8 @@
       >
         <div
           class="flex flex-col items-center box-border xl:absolute top-0 right-0"
+          data-aos="fade-left"
+          data-aos-anchor-placement="top-center"
         >
           <div
             class="w-72 h-96 rounded-xl bg-white flex flex-col justify-center items-center"
@@ -137,7 +139,11 @@
             Learn More
           </button>
         </div>
-        <div class="flex flex-col items-center box-border xl:absolute">
+        <div
+          class="flex flex-col items-center box-border xl:absolute"
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-center"
+        >
           <div
             class="w-72 h-96 rounded-xl bg-white flex flex-col justify-center items-center"
           >
@@ -158,6 +164,8 @@
         </div>
         <div
           class="flex flex-col items-center box-border xl:absolute bottom-0 right-8"
+          data-aos="fade-left"
+          data-aos-anchor-placement="top-center"
         >
           <div
             class="w-72 h-96 rounded-xl bg-white flex flex-col justify-center items-center"
@@ -409,7 +417,12 @@
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        disable: function () {
+          var maxWidth = 1280;
+          return window.innerWidth < maxWidth;
+        },
+      });
     </script>
   </body>
 </html>
