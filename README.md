@@ -22,7 +22,6 @@ You are more than welcome to contribute. Just submit changes via pull request an
 <p align="center">
   <a href="https://github.com/abhay-ag/portfolio-coding-blocks/graphs/contributors">
     <img src="https://contributors-img.web.app/image?repo=abhay-ag/portfolio-coding-blocks" />
-    <img src="https://contributors-img.web.app/image?repo=abhay-ag/portfolio-coding-blocks" />
   </a>
 </p>
 
